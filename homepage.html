@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles/homepage.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <div class="body-background"></div>
+  <main>
+    <div class="intro">
+      <img src="icons/logo.png" class="logo">
+      <span>Welcome to...</span>
+      <span>Katy's Art Portfolio</span>
+      <button class="explore-button" onclick="scrollToCenter(event, 'background')">
+        <span class="star-left">&#10025;</span> <span class="explore-text">Explore</span> <span class="star-right">&#10025;</span>
+      </button>
+    </div>
+
+
+    <div class="background" id="background">
+      <a href="https://www.youtube.com/@katyhsueh" target="_blank">
+        <div class="music-clippath clippath"></div>
+      </a>
+      <a href="graphic-design.html">
+        <div class="graphic-clippath-1 clippath"></div>
+        <div class="graphic-clippath-2 clippath"></div>
+      </a>
+      <a href="digital-art.html">
+        <div class="digital-clippath-1 clippath"></div>
+        <div class="digital-clippath-2 clippath"></div>
+      </a>
+      <a href="trad-art.html">
+        <div class="trad-clippath clippath"></div>
+      </a>
+      <a href="about-me.html">
+        <div class="about-clippath clippath"></div>
+      </a>
+      <a href="commissions.html">
+        <div class="commissions-clippath clippath"></div>
+      </a>
+      <a href="animation.html">
+        <div class="animation-clippath clippath"></div>
+      </a>
+      <a href="contact-info.html">
+        <div class="contact-clippath clippath"></div>
+      </a>
+    </div>
+
+  </main>
+
+
+  <script>
+    function scrollToCenter(event, id) {
+      event.preventDefault();
+      const element = document.getElementById(id);
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/animation.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background"></div>
+  <a href="homepage.html">
+    <img src="icons/logo.png" alt="" class="logo">
+  </a>
+  <div class="heading">
+    アニメーション
+  </div>
+  <div class="container">
+    <img src="/frames/camera2.png" alt="" class="camera">
+    <video controls autoplay class="vid" id="vid">
+      <source src="videos/fishRain.mp4">
+    </video>
+    <div class="back" onclick="prevVid()"></div>
+    <div class="next" onclick="nextVid()"></div>
+    <div class="pause" onclick="pauseVid()"></div>
+  </div>
+
+  <script>
+    const videoList = [
+      "videos/fishRain.mp4",
+      "videos/egg.mp4"
+    ]
+    let currentIndex = 0;
+
+    function playVid(index){
+      const video = document.getElementById("vid");
+      video.src = videoList[index];
+      video.load();
+      video.play();
+     }
+
+    function nextVid(){
+      if(currentIndex < videoList.length-1){
+        currentIndex++;
+        playVid(currentIndex);
+      }
+    }
+    function prevVid(){
+      if(currentIndex > 0){
+        currentIndex--;
+        playVid(currentIndex);
+      }
+    }
+
+    function pauseVid(){
+      const video = document.getElementById("vid");
+
+      if(!video.paused){
+        video.pause();
+      } else if(video.paused || video.ended){
+        video.play();
+      }
+    }
+
+  </script>
+</body>
+</html>
