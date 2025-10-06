@@ -1,0 +1,84 @@
+body{
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+  background-color: rgb(44, 55, 72);
+  position: relative;
+  padding-bottom: 100px;
+}
+.background{
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(/images/background/background14.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+  opacity: 0.8;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+.logo{
+  width: 55px;
+  z-index: 20;
+  position: fixed;
+  left: 40px;
+  top: 30px;
+}
+
+.heading{
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-family: 'Rampart One', sans-serif;
+  text-align: center;
+  margin: 80px;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row img{
+  height: 500px;
+  margin: 20px;
+}
+.row2{
+  scroll-margin-top: 40px;
+  scroll-snap-type: mandatory;
+}
+
+.row4 img, .row5 img, .row6 img{
+  height: 350px;
+}
+.row4, .row5, .row6{
+  margin: 0px;  
+}
+
+.row7 img{
+  height: 700px;
+}
+
+.divider-container{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+
+.divider{
+  width: 70vw;
+  height: 0px;
+  border-bottom: 3px dashed rgb(195, 195, 191);
+}
+.divider-container .decor{
+  width: 90px;
+  opacity: 0.8;
+  margin: 0 20px 0 20px;
+}
+

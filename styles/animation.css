@@ -1,0 +1,86 @@
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overscroll-behavior: none;
+}
+.background{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(/images/background/plaid7.jpg);
+  background-repeat: repeat;
+  z-index: -10;
+  opacity: 0.7;
+}
+.logo{
+  width: 55px;
+  z-index: 20;
+  position: fixed;
+  left: 20px;
+  top: 26px;
+}
+.heading{
+  font-family: 'Rampart One', sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+}
+.camera{
+  z-index: 20;
+  position: relative;
+  pointer-events: none;
+}
+.container{
+  position: relative;
+  transform: scale(1.1);
+  margin: 30px;
+}
+.vid{
+  z-index: 1;
+  position: absolute;
+  left: 80px;
+  top: 58px;
+  height: 320px;
+  width: 430px;
+  object-fit: cover;
+}
+.back, .next{
+  z-index: 30;
+  height: 60px;
+  width: 38px;
+  position: absolute;
+  top: 245px;
+  cursor: pointer;
+  border-radius: 35px;
+  transition: 0.1s;
+}
+.back:hover, .next:hover, .pause:hover{
+  opacity: 0.6;
+  background-color: rgb(73, 73, 73);
+  filter: blur(10px);
+}
+
+.back{
+  right: 135px;
+}
+.next{
+  right: 60px;
+}
+.pause{
+  z-index: 30;
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 258px;
+  cursor: pointer;
+  border-radius: 35px;
+  transition: 0.1s;
+  right: 100px;
+}

@@ -1,0 +1,56 @@
+body{
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rampart One", sans-serif;
+  font-size: 50px;
+  background-image: url(/images/background/plaid2.jpeg);
+  background-repeat: repeat;
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+}
+.view{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  width: 100vw;
+  height: 100vh;
+}
+
+img{
+  object-fit: cover;
+  height: 700px;
+  width: 600px;
+}
+
+.art-container{
+  height: 700px;
+  width: 600px;
+  position: relative;
+}
+
+.cover{
+  height: 700px;
+  width: 600px;
+  background-color: black;
+  z-index: 2;
+  position: absolute;
+  opacity: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dotted grey;
+  box-sizing: border-box;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.cover:hover{
+  opacity: 0.7;
+  transition: 0.3s;
+}
