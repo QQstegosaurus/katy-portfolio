@@ -7,7 +7,7 @@ body{
   justify-content: center;
   font-family: "Rampart One", sans-serif;
   font-size: 50px;
-  background-image: url(/images/background/plaid2.jpeg);
+  background-image: url(../images/background/plaid2.jpeg);
   background-repeat: repeat;
   overscroll-behavior: none;
   scroll-behavior: smooth;

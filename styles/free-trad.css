@@ -10,7 +10,7 @@ body{
   scroll-behavior: smooth;
 ;}
 .background-image{
-  background-image: url(/images/background/dots.png);
+  background-image: url(../images/background/dots.png);
   opacity: 0.8;
   position: fixed;
   left: 0;
@@ -34,7 +34,7 @@ body{
   padding-bottom: 50px;
 }
 h1{
-  background-image: url(/images/background/brown-checker.jpg);
+  background-image: url(../images/background/brown-checker.jpg);
   border: 0px solid black;
   background-repeat: repeat;
   margin: 0;

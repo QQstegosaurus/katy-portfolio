@@ -14,7 +14,7 @@ body{
   scroll-behavior: smooth;
 }
 .background-image{
-  background-image: url(/images/background/IMG_7625.JPG);
+  background-image: url(../images/background/IMG_7625.JPG);
   position: fixed;
   left: 0;
   top: 0;

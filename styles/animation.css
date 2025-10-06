@@ -15,7 +15,7 @@ body{
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(/images/background/plaid7.jpg);
+  background-image: url(../images/background/plaid7.jpg);
   background-repeat: repeat;
   z-index: -10;
   opacity: 0.7;

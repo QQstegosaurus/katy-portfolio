@@ -9,7 +9,7 @@ body{
   margin: 0;
 ;}
 .background-image{
-  background-image: url(/images/background/plaid3.jpeg);
+  background-image: url(../images/background/plaid3.jpeg);
   position: fixed;
   left: 0;
   top: 0;

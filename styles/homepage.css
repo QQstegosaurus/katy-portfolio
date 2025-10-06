@@ -12,7 +12,7 @@ html{
 }
 
 .body-background{
-  background-image: url(/images/background/background22.jpg);
+  background-image: url(../images/background/background22.jpg);
   opacity: 0.7;
   width: 100vw;
   height: 100vh;
@@ -89,7 +89,7 @@ main{
 
 
 .background{
-  background-image: url(/images/homepage.png);
+  background-image: url(../images/homepage.png);
   position: relative;
   background-size: contain;
   height: 700px;

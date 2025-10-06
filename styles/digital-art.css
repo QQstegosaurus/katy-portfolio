@@ -10,7 +10,7 @@ body{
   scroll-behavior: smooth;
 ;}
 .background-image{
-  background-image: url(/images/background/background11.jpg);
+  background-image: url(../images/background/background11.jpg);
   position: fixed;
   left: 0;
   top: 0;
@@ -34,7 +34,7 @@ body{
   padding-bottom: 50px;
 }
 h1{
-  background-image: url(/images/background/background.jpg);
+  background-image: url(../images/background/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
